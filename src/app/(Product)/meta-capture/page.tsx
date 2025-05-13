@@ -1,25 +1,95 @@
+import Image from "next/image";
+
 export default function MetaCapturePage() {
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-8">Meta Capture</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
-          <h2 className="text-2xl font-semibold mb-4">제품 소개</h2>
-          <p className="text-gray-600 dark:text-gray-300">
-            Meta Capture는 3D 스캐닝과 포토그래메트리를 위한 통합 솔루션으로,
-            정밀한 3D 모델 생성에 최적화되어 있습니다.
-          </p>
+    <div className="container mx-auto py-8 flex flex-col items-center gap-12">
+      {/* Hero/소개 */}
+      <section className="px-4">
+        <div className="flex flex-col items-center gap-8">
+          <div className="flex-1 space-y-4">
+            <div className="flex items-center justify-center gap-2">
+              <Image
+                src="/Product/MetaCapture/logo.svg"
+                alt="Meta Capture"
+                width={150}
+                height={150}
+                className="object-contain"
+              />
+            </div>
+            <p className="text-gray-700 dark:text-gray-200 text-base text-center">
+              <span className="text-[#339dff]">메타캡쳐(meta capture)</span>는
+              포토그래메트리 기술을 기반으로 3D 모델링 데이터를 복원하기 위해
+              데이터를 복원하기 위해 인체 전신을 촬영하기 위해 개발한 전신 인체
+              촬영용 3D 포토 스캐너입니다.
+            </p>
+          </div>
+          <div className="relative w-full h-80">
+            <Image
+              src="/Product/MetaCapture/metaCapture.png"
+              alt="Meta Capture"
+              fill
+              className="object-contain rounded"
+            />
+          </div>
         </div>
-        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
-          <h2 className="text-2xl font-semibold mb-4">주요 기능</h2>
-          <ul className="space-y-2 text-gray-600 dark:text-gray-300">
-            <li>3D 스캐닝</li>
-            <li>포토그래메트리</li>
-            <li>텍스처 매핑</li>
-            <li>모델 최적화</li>
-          </ul>
+      </section>
+
+      {/* 활용 분야 */}
+      <section className="mb-12 flex flex-col items-center">
+        <h2 className="text-2xl md:text-3xl font-bold mb-6 text-blue-900 dark:text-blue-300 flex items-center gap-2">
+          메타캡쳐 활용 분야
+        </h2>
+        <div className="flex flex-col gap-4 w-full">
+          <div className="flex flex-col items-center ">
+            <div className="flex justify-center w-full min-h-64 h-full mb-4">
+              <Image
+                src="/Product/MetaCapture/use_1.png"
+                alt="쇼핑"
+                width={840}
+                height={840}
+                className="object-fit"
+              />
+            </div>
+            <div className="flex items-center">
+              <span className="text-base md:text-lg font-semibold">
+                인체/ 패션몰
+              </span>
+            </div>
+          </div>
+          <div className="flex flex-col items-center">
+            <div className="flex justify-center w-full min-h-64 h-full mb-4">
+              <Image
+                src="/Product/MetaCapture/use_2.png"
+                alt="건축/건설"
+                width={840}
+                height={840}
+                className="object-fit"
+              />
+            </div>
+            <div className="flex items-center">
+              <span className="text-base md:text-lg font-semibold">
+                의류/ 패션쇼
+              </span>
+            </div>
+          </div>
+          <div className="flex flex-col items-center">
+            <div className="flex justify-center w-full min-h-64 h-full mb-4">
+              <Image
+                src="/Product/MetaCapture/use_3.png"
+                alt="GIS/시설관리"
+                width={840}
+                height={840}
+                className="object-fit"
+              />
+            </div>
+            <div className="flex items-center">
+              <span className="text-base md:text-lg font-semibold">
+                전통 의류
+              </span>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

@@ -216,6 +216,14 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/gis"
+                  className="hover:text-white transition-colors"
+                >
+                  GIS
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/facility-management"
                   className="hover:text-white transition-colors"
                 >

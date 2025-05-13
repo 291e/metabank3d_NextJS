@@ -70,6 +70,7 @@ export default function Header() {
         path: "/architecture-construction-engineering",
       },
       { name: "Insurance", path: "/insurance" },
+      { name: "GIS", path: "/gis" },
       { name: "Facility Management", path: "/facility-management" },
     ],
   };

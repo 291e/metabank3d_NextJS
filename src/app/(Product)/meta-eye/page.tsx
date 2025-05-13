@@ -1,25 +1,47 @@
+import Image from "next/image";
+import MetaEyeFeaturesSwiper from "@/components/swiper/MetaEyeFeaturesSwiper";
+
 export default function MetaEyePage() {
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-8">Meta Eye</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
-          <h2 className="text-2xl font-semibold mb-4">제품 소개</h2>
-          <p className="text-gray-600 dark:text-gray-300">
-            Meta Eye는 AI 기반 이미지 분석 솔루션으로, 객체 인식과 이미지 처리에
-            특화된 기술을 제공합니다.
-          </p>
+    <div className="container mx-auto py-8 flex flex-col items-center gap-12">
+      {/* Hero/소개 */}
+      <section className="px-4 ">
+        <div className="flex flex-col items-center gap-8">
+          <div className="flex-1 space-y-4">
+            <div className="flex items-center justify-center gap-2">
+              <Image
+                src="/Product/MetaEye/logo.svg"
+                alt="Meta Eye"
+                width={150}
+                height={150}
+                className="object-contain"
+              />
+            </div>
+            <p className="text-gray-700 dark:text-gray-200 text-base text-center">
+              <span className="text-[#339dff]">메타아이(meta eye)</span>는
+              포토그래메트리 기술을 기반으로 3D 모델링 데이터를 복원하기 위해
+              전문가뿐만 아니라 일반인 누구나 쉽게 사물을 촬영하기 위해 자체
+              촬영하기 위해 자체 개발한 소품 촬영용 회전식 3D 포토 스캐너입니다.
+            </p>
+          </div>
+          <div className="relative w-full h-80">
+            <Image
+              src="/Product/MetaEye/metaEye.png"
+              alt="Meta Eye"
+              fill
+              className="object-contain rounded"
+            />
+          </div>
         </div>
-        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
-          <h2 className="text-2xl font-semibold mb-4">주요 기능</h2>
-          <ul className="space-y-2 text-gray-600 dark:text-gray-300">
-            <li>AI 객체 인식</li>
-            <li>이미지 분석</li>
-            <li>패턴 인식</li>
-            <li>실시간 처리</li>
-          </ul>
-        </div>
-      </div>
+      </section>
+
+      {/* 주요 특징 */}
+      <section className="pb-12 pt-6 flex flex-col items-center bg-[#F6F6F6] px-5 w-full">
+        <h2 className="text-xl md:text-2xl font-bold mb-6 text-blue-900 dark:text-blue-300 flex items-center gap-2">
+          메타아이 주요특징
+        </h2>
+        <MetaEyeFeaturesSwiper />
+      </section>
     </div>
   );
 }
