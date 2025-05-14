@@ -61,7 +61,7 @@ const MetaActionFeaturesSwiper: React.FC = () => (
       </Swiper>
     </div>
     {/* 태블릿/PC: 그리드 카드 */}
-    <div className="hidden sm:grid grid-cols-2 gap-6 w-full max-w-3xl">
+    <div className="hidden sm:grid grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-3xl md:max-w-4xl">
       {features.map((text, i) => (
         <Card key={text + i} text={text} i={i} />
       ))}

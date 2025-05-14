@@ -156,7 +156,7 @@ export default function Header() {
           {/* 추가 로고 */}
           <div className="hidden md:flex gap-4">
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Link href="#contact">
+              <Link href="https://real.metabank360.com/">
                 {scrolled ? (
                   <Image
                     src="/Layout/vision_logo.svg"
@@ -176,7 +176,7 @@ export default function Header() {
             </motion.div>
 
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Link href="#contact">
+              <Link href="https://metabank360.com/">
                 {scrolled ? (
                   <Image
                     src="/Layout/metabank360_dark.png"
@@ -188,6 +188,26 @@ export default function Header() {
                   <Image
                     src="/Layout/metabank360.svg"
                     alt="MetaBank360 로고"
+                    width={150}
+                    height={50}
+                  />
+                )}
+              </Link>
+            </motion.div>
+
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <Link href="https://www.bogofit.kr/">
+                {scrolled ? (
+                  <Image
+                    src="/Layout/BOGOFIT_dark.svg"
+                    alt="MetaBank3D 로고"
+                    width={150}
+                    height={50}
+                  />
+                ) : (
+                  <Image
+                    src="/Layout/BOGOFIT.svg"
+                    alt="MetaBank3D 로고"
                     width={150}
                     height={50}
                   />

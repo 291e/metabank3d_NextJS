@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function MetaPanoPage() {
   return (
-    <div className="container mx-auto py-8 flex flex-col items-center">
+    <div className="py-8 flex flex-col items-center">
       {/* Hero/소개 */}
       <section className="px-4 mb-12">
         <div className="flex flex-col md:flex-row items-center gap-8">
@@ -17,7 +17,7 @@ export default function MetaPanoPage() {
                 className="object-contain"
               />
             </div>
-            <p className="text-gray-700 dark:text-gray-200 text-sm md:text-base text-center">
+            <p className="text-gray-700 dark:text-gray-200 text-sm md:text-base text-center max-w-4xl">
               <span className="text-[#339dff]">메타파노(meta pano)</span>는
               메타비전 S/W를 활용하여 3D 데이터를 생성하고 생성한 모델링
               데이터와 ㈜메타뱅크에서 자체 개발한 3D 웹 뷰어 및 전용 서버를
@@ -32,7 +32,7 @@ export default function MetaPanoPage() {
       </section>
 
       {/* 주요 특징 */}
-      <section className="pb-12 pt-6 flex flex-col items-center bg-[#F6F6F6] px-5 w-full">
+      <section className="pb-12 pt-6 flex flex-col items-center bg-[#F6F6F6] md:bg-transparent px-5 w-full">
         <h2 className="text-xl md:text-2xl font-bold mb-6 text-blue-900 dark:text-blue-300 flex items-center gap-2">
           메타파노 주요특징
         </h2>
@@ -40,21 +40,21 @@ export default function MetaPanoPage() {
       </section>
 
       {/* 활용 분야 */}
-      <section className="py-12 text-white flex flex-col items-center bg-[#202F4E] px-4 mb-12">
+      <section className="py-12 text-white flex flex-col items-center bg-[#202F4E] px-4 mb-12 w-full">
         <h2 className="text-xl md:text-2xl font-bold flex items-center gap-2">
           메타파노 활용 분야 - 쇼핑몰 콘텐츠
         </h2>
         <div className="flex flex-col gap-12 w-full">
           <div className="flex flex-col items-center ">
             <div className="flex items-center pt-4">
-              <span className="text-sm md:text-base">
+              <span className="text-sm md:text-base text-center max-w-3xl">
                 메타파노는 메타비전 소프트웨어를 활용하여 만들어진 3D 모델링
                 데이터와 ㈜메타뱅크에서 자체 개발한 3D 웹 뷰어 및 전용 서버를
                 활용하여 전 세계 사용자들이 메타버스 공간에 입장할 수 있는
                 플랫폼입니다.
               </span>
             </div>
-            <div className="relative w-full h-80">
+            <div className="relative w-full h-80 md:my-12">
               <Image
                 src="/Product/MetaPano/use_2.png"
                 alt="쇼핑"
@@ -63,7 +63,7 @@ export default function MetaPanoPage() {
               />
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-sm md:text-base">
+              <span className="text-sm md:text-base text-center max-w-3xl">
                 이 플랫폼은 쇼핑몰, 박물관, 미술관, 사무 공간 등과 같은 다양한
                 실생활 콘텐츠 및 문화 체험 서비스를 제공합니다. 사용자들은 이를
                 통해 재미있고 현장감 있게 즐길 수 있으며, 사실성이 뛰어난 새로운
@@ -100,14 +100,14 @@ export default function MetaPanoPage() {
       </section>
 
       {/* 활용 분야 */}
-      <section className="mb-12 flex flex-col items-center p-4 bg-[#F4FAFD] py-12">
-        <h2 className="text-xl md:text-2xl font-bold text-blue-900 dark:text-blue-300 flex items-center gap-2">
+      <section className="mb-12 flex flex-col items-center p-4 bg-[#F4FAFD] py-12 w-full">
+        <h2 className="text-xl md:text-2xl font-bold text-blue-900  flex items-center gap-2">
           메타파노 활용 분야 - 박물관/전시관
         </h2>
         <div className="flex flex-col gap-12 w-full">
           <div className="flex flex-col items-center">
             <div className="flex items-center pt-4">
-              <span className="text-sm md:text-base">
+              <span className="text-sm md:text-base text-center max-w-3xl">
                 메타버스 박물관 또는 전시관은 유물이나 전시물을 전세계
                 사용자들이 메타버스 공간에서 관람하고 개인적 공유와 문화(교육)
                 체험이 가능한 서비스를 재미있고 현장감 있게 즐길 수 있는

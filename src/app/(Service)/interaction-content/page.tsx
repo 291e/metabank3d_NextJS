@@ -2,17 +2,17 @@ import Image from "next/image";
 
 export default function InteractionContentPage() {
   return (
-    <div className="container mx-auto flex flex-col items-center gap-4 bg-[#F5F5F7]">
-      <div className="w-full aspect-[16/9] relative">
+    <div className="flex flex-col items-center gap-4 bg-[#F5F5F7] md:bg-transparent">
+      <div className="w-full aspect-[16/9] relative md:aspect-[21/9]">
         <Image
           src="/Product/MetaAction/use_1.png"
           alt="Real Meta 대표 이미지"
           fill
-          className="object-contain px-4"
+          className="object-contain px-4 md:px-0"
           priority
         />
       </div>
-      <div className="flex flex-col gap-2 px-4 pb-8">
+      <div className="flex flex-col gap-2 px-4 pb-8 md:text-center max-w-4xl">
         <h1 className="text-xl font-bold">
           메타파노 카메라 및 라이다센서 기반 인터랙션 콘텐츠 및 서비스{" "}
           <span className="text-[#339dff]">소개</span>
@@ -25,11 +25,11 @@ export default function InteractionContentPage() {
       </div>
 
       <section className=" flex flex-col items-center w-full px-4 bg-white py-12 gap-12">
-        <h2 className="text-xl font-bold self-start">
+        <h2 className="text-xl font-bold self-start md:self-center">
           메타액션 인터랙션 콘텐츠 및 서비스
           <span className="text-[#339dff]"> 주요 특징</span>
         </h2>
-        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-3xl">
+        <ul className="grid grid-cols-1 gap-4 w-full max-w-3xl">
           {[
             "라이다센서 기반의 동작인식 기술",
             "카메라 기반의 영상인식 기술",
@@ -49,7 +49,7 @@ export default function InteractionContentPage() {
       </section>
 
       <section className=" flex flex-col items-center w-full px-4 bg-white py-12 gap-12">
-        <h2 className="text-xl font-bold self-start">
+        <h2 className="text-xl font-bold self-start md:self-center">
           메타액션 인터랙션 콘텐츠 및 서비스{" "}
           <span className="text-[#339dff]">활용 사례</span>
         </h2>

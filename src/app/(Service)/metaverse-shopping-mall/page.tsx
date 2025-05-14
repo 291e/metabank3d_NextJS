@@ -2,17 +2,17 @@ import Image from "next/image";
 
 export default function MetaverseShoppingMallPage() {
   return (
-    <div className="container mx-auto flex flex-col items-center gap-4 bg-[#F5F5F7]">
-      <div className="w-full aspect-[16/9] relative">
+    <div className="flex flex-col items-center gap-4 bg-[#F5F5F7] md:bg-transparent">
+      <div className="w-full aspect-[16/9] relative md:aspect-[21/9]">
         <Image
           src="/Product/MetaPano/use_2.png"
           alt="Real Meta 대표 이미지"
           fill
-          className="object-contain px-4"
+          className="object-contain px-4 md:px-0"
           priority
         />
       </div>
-      <div className="flex flex-col gap-2 px-4 pb-8">
+      <div className="flex flex-col gap-2 px-4 pb-8 md:text-center max-w-4xl">
         <h1 className="text-xl font-bold">
           메타파노 쇼핑몰 <span className="text-[#339dff]">소개</span>
         </h1>
@@ -24,10 +24,10 @@ export default function MetaverseShoppingMallPage() {
       </div>
 
       <section className=" flex flex-col items-center w-full px-4 bg-white py-12 gap-12">
-        <h2 className="text-xl font-bold self-start">
+        <h2 className="text-xl font-bold self-start md:self-center">
           메타파노 쇼핑몰 <span className="text-[#339dff]">주요 특징</span>
         </h2>
-        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-3xl">
+        <ul className="grid grid-cols-1 gap-4 w-full max-w-3xl">
           {[
             "사실적인 3D 쇼핑몰(백화점) 환경 구축",
             "해외 유명 쇼핑몰, 백화점 등 다양한 테마별 공간(템플릿)",
@@ -49,7 +49,7 @@ export default function MetaverseShoppingMallPage() {
       </section>
 
       <section className=" flex flex-col items-center w-full px-4 bg-white py-12 gap-12">
-        <h2 className="text-xl font-bold self-start">
+        <h2 className="text-xl font-bold self-start md:self-center">
           메타파노 쇼핑몰 <span className="text-[#339dff]">활용 사례</span>
         </h2>
 

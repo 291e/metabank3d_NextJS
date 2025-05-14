@@ -4,17 +4,17 @@ import Link from "next/link";
 
 export default function RealMetaPage() {
   return (
-    <div className="container mx-auto flex flex-col items-center gap-4 bg-[#F5F5F7]">
-      <div className="w-full aspect-[16/9] relative">
+    <div className="flex flex-col items-center gap-4 bg-[#F5F5F7] md:bg-transparent">
+      <div className="w-full aspect-[16/9] relative md:aspect-[21/9]">
         <Image
           src="/Service/realmeta/realmeta.png"
           alt="Real Meta 대표 이미지"
           fill
-          className="object-contain px-4"
+          className="object-contain px-4 md:px-0"
           priority
         />
       </div>
-      <div className="flex flex-col gap-2 px-4">
+      <div className="flex flex-col gap-2 px-4 md:text-center max-w-4xl">
         <h1 className="text-xl font-bold">
           리얼메타 제품 <span className="text-[#339dff]">소개</span>
         </h1>
@@ -34,10 +34,10 @@ export default function RealMetaPage() {
       </div>
 
       <section className=" flex flex-col items-center w-full px-4 bg-white py-12 gap-12">
-        <h2 className="text-xl font-bold self-start">
+        <h2 className="text-xl font-bold self-start md:self-center">
           리얼메타 <span className="text-[#339dff]">주요 특징</span>
         </h2>
-        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-3xl">
+        <ul className="grid grid-cols-1 gap-4 w-full max-w-3xl">
           {[
             "www.realmeta3d.com 데이터 공유 사이트 지원",
             "고품질 데이터 시각화를 위한 웹 3D 뷰어 지원",
@@ -56,7 +56,7 @@ export default function RealMetaPage() {
       </section>
 
       <section className=" flex flex-col items-center w-full px-4 bg-white py-12 gap-12">
-        <h2 className="text-xl font-bold self-start">
+        <h2 className="text-xl font-bold self-start md:self-center">
           리얼메타 <span className="text-[#339dff]">활용 사례</span>
         </h2>
 

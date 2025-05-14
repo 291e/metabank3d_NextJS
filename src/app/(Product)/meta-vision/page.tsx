@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ArrowRightIcon } from "lucide-react";
 export default function MetaVisionPage() {
   return (
-    <div className="container mx-auto py-8 flex flex-col items-center gap-12">
+    <div className="py-8 flex flex-col items-center gap-12">
       {/* Hero/소개 */}
       <section className=" px-4">
         <div className="flex flex-col md:flex-row items-center gap-8">
@@ -28,7 +28,7 @@ export default function MetaVisionPage() {
                 className="object-contain"
               />
             </div>
-            <p className="text-gray-700 dark:text-gray-200 text-base text-center">
+            <p className="text-gray-700 dark:text-gray-200 text-base text-center max-w-4xl">
               <span className="text-[#339dff]">메타비전(meta vision)</span>은
               인공지능(머신러닝, 딥러닝)과 포토그래메트리기술을 기반으로
               카메라로 촬영된 다수의 사진 이미지를 활용하여 소프트웨어적으로 3D
@@ -41,8 +41,8 @@ export default function MetaVisionPage() {
       </section>
 
       {/* 주요 특징 */}
-      <section className="pb-12 pt-6 flex flex-col items-center bg-[#012B52] px-5 w-full">
-        <h2 className="text-xl md:text-2xl mb-6 text-white dark:text-blue-300 flex items-center gap-2">
+      <section className="pb-12 pt-6 flex flex-col items-center bg-[#012B52] md:bg-transparent px-5 w-full">
+        <h2 className="text-xl md:text-2xl mb-6 text-white md:text-blue-300 flex items-center gap-2">
           메타비전 주요특징
         </h2>
         <MetaVisionFeaturesSwiper />

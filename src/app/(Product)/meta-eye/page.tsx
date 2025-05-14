@@ -3,7 +3,7 @@ import MetaEyeFeaturesSwiper from "@/components/swiper/MetaEyeFeaturesSwiper";
 
 export default function MetaEyePage() {
   return (
-    <div className="container mx-auto py-8 flex flex-col items-center gap-12">
+    <div className=" py-8 flex flex-col items-center gap-12">
       {/* Hero/소개 */}
       <section className="px-4 ">
         <div className="flex flex-col items-center gap-8">
@@ -17,7 +17,7 @@ export default function MetaEyePage() {
                 className="object-contain"
               />
             </div>
-            <p className="text-gray-700 dark:text-gray-200 text-base text-center">
+            <p className="text-gray-700 dark:text-gray-200 text-base text-center max-w-4xl">
               <span className="text-[#339dff]">메타아이(meta eye)</span>는
               포토그래메트리 기술을 기반으로 3D 모델링 데이터를 복원하기 위해
               전문가뿐만 아니라 일반인 누구나 쉽게 사물을 촬영하기 위해 자체
@@ -36,7 +36,7 @@ export default function MetaEyePage() {
       </section>
 
       {/* 주요 특징 */}
-      <section className="pb-12 pt-6 flex flex-col items-center bg-[#F6F6F6] px-5 w-full">
+      <section className="pb-12 pt-6 flex flex-col items-center bg-[#F6F6F6] md:bg-transparent px-5 w-full">
         <h2 className="text-xl md:text-2xl font-bold mb-6 text-blue-900 dark:text-blue-300 flex items-center gap-2">
           메타아이 주요특징
         </h2>

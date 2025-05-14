@@ -3,7 +3,7 @@ import MetaActionFeaturesSwiper from "@/components/swiper/MetaActionFeaturesSwip
 
 export default function MetaActionPage() {
   return (
-    <div className="container mx-auto py-8 flex flex-col items-center gap-12">
+    <div className="py-8 flex flex-col items-center gap-12">
       {/* Hero/소개 */}
       <section className="p-4">
         <div className="flex flex-col items-center gap-8">
@@ -17,7 +17,7 @@ export default function MetaActionPage() {
                 className="object-contain"
               />
             </div>
-            <p className="text-gray-700 dark:text-gray-200 text-base text-center">
+            <p className="text-gray-700 dark:text-gray-200 text-base text-center max-w-4xl">
               <span className="text-[#339dff]">메타액션(meta action)</span>은
               라이다 센서 기반의 동작인식 기술이나 카메라 기반의 영상인식 기술을
               활용하여 사용자의 몸이나 손동작을 통해 창의적인 영상 등을 구현하는
@@ -36,7 +36,7 @@ export default function MetaActionPage() {
       </section>
 
       {/* 주요 특징 */}
-      <section className="pb-12 pt-6 flex flex-col items-center bg-[#F6F6F6] px-5 w-full">
+      <section className="pb-12 pt-6 flex flex-col items-center bg-[#F6F6F6] md:bg-transparent px-5 w-full">
         <h2 className="text-xl md:text-2xl mb-6 text-blue-900 dark:text-blue-300 flex items-center gap-2">
           메타액션 주요특징
         </h2>

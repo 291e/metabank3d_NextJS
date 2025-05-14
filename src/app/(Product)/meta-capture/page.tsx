@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function MetaCapturePage() {
   return (
-    <div className="container mx-auto py-8 flex flex-col items-center gap-12">
+    <div className="py-8 flex flex-col items-center gap-12">
       {/* Hero/소개 */}
       <section className="px-4">
         <div className="flex flex-col items-center gap-8">
@@ -16,7 +16,7 @@ export default function MetaCapturePage() {
                 className="object-contain"
               />
             </div>
-            <p className="text-gray-700 dark:text-gray-200 text-base text-center">
+            <p className="text-gray-700 dark:text-gray-200 text-base text-center max-w-4xl">
               <span className="text-[#339dff]">메타캡쳐(meta capture)</span>는
               포토그래메트리 기술을 기반으로 3D 모델링 데이터를 복원하기 위해
               데이터를 복원하기 위해 인체 전신을 촬영하기 위해 개발한 전신 인체
